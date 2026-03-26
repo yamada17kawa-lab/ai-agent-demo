@@ -15,5 +15,5 @@ messages = [
 res = chat.stream(messages)
 
 for r in res:
-    if r.content is not None and r.content != " ":
+    if r.content is not None and r.content != "":
         print(r.content, end="", flush=True)

@@ -23,5 +23,5 @@ for chunk in completions:
 
     # if reasoning is not None:
     #     print(reasoning, end="", flush=True)
-    if content is not None:
+    if content is not None and content != "":
         print(content, end="", flush=True)
