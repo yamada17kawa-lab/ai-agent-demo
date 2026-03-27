@@ -16,9 +16,9 @@ example_data = [
 ]
 
 few_shot_prompt = FewShotPromptTemplate(
+    prefix="给出给定词的反义词，示例如下",
     example_prompt=example_prompt,
     examples=example_data,
-    prefix="给出给定词的反义词，示例如下",
     suffix="基于示例告诉我: {input_data}的反义词是什么",
     input_variables=["input_data"]
 )
