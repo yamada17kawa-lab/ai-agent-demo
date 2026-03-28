@@ -16,5 +16,5 @@ if file is not None:
     st.subheader(fname)
     st.write(f"类型: {ftype}, 大小: {fsize: .2f} KB")
 
-    naiyou = file.getvalue().encode("utf-8")
+    naiyou = file.getvalue().decode("utf-8")
     st.write("内容: " + naiyou)
