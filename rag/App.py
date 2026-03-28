@@ -4,7 +4,7 @@ st.title("上传文件")
 
 file = st.file_uploader(
     "上传文件",
-    type="text/plain",
+    type=["txt"],
     accept_multiple_files=False,
 )
 
